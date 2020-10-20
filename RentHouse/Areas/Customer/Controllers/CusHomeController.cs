@@ -13,5 +13,9 @@ namespace RentHouse.Areas.Customer.Controllers
         {
             return View();
         }
+        public ActionResult AddHouse()
+        {
+            return View();
+        }
     }
 }
