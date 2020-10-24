@@ -78,7 +78,7 @@
 
 
 
-    <div id="dropDownSelect1"></div>
+    @*<div id="dropDownSelect1"></div>
     <select name="cars" id="test">
     </select>
 
@@ -92,7 +92,7 @@
         </thead>
         <tbody id="test_table">
         </tbody>
-    </table>
+    </table>*@
 
     <!--===============================================================================================-->
     <script src="~/Login/vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -103,13 +103,13 @@
     <script src="~/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
     <script src="~/Login/vendor/select2/select2.min.js"></script>
-    <script>
+    @*<script>
         $(".selection-2").select2({
             minimumResultsForSearch: 20,
             dropdownParent: $('#dropDownSelect1')
         });
         $.ajax({
-            url: "https://localhost:44361/api/SinhVien/getall2",
+            url: "http://localhost:50883/api/SinhVien/getall2",
             success: function (result) {
                 CHUNG_GAN_DL_COMBO('', 'test', '', '', result);
                 CHUNG_GAN_TABLE('test_table', result);
@@ -121,7 +121,7 @@
         function myFunction(id) {
             alert(id);
         }
-    </script>
+    </script>*@
     <script src="~/Scripts/JqCommon.js"></script>
     <!--===============================================================================================-->
     <script src="~/Login/vendor/daterangepicker/moment.min.js"></script>
